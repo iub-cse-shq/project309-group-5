@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Seller's Dashboard</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/c9735f6ea9.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" type="images/x-icon" href="#" />
+        <link rel="stylesheet" type="text/css" href="seller.css" media="all" />
+    </head>
+    <body>
+        <div class='header-area'>
+            <p class='seller-home-btn' role='button'>Seller Dashboard</p>
+            <p class='account-setting-btn' role='button'>Account Setting</p>
+            <button class='log-out-btn'>Log out</button>
+            <button class='add-product-btn'>Add Product</button>
+            <button class='order-btn'>Orders</button>
+        </div>
+
+        <!-- add product header -->
+        <div class='add-product-header'>
+            <p class='add-product-text'>Add New Product</p>
+        </div>
+
+               
+
+
+        <div class='center'>
+
+
+
+            <div class='home-page-area'>
+                <div class="product-text">
+                    <p>Products</p>
+                </div>
+                <div>
+                    <p class="product-list">
+                        
+                    </p>
+                </div>
+            </div>
+            
+
+
+            <!-- view orders page by seller -->
+            <div class="order-page-area">
+                <p class='order-product-text'>Order list for delivery</p>
+                <div class='order-element'>
+                    <div class='order-product-img'>
+                        <img class='order-img' src='' />
+                    </div>
+                    <div class='order-product-detail'>
+                        <p class='order-product-name'>Name:</p>
+                        <p class='order-product-price'>price: $ </p>
+                        <p class='order-product-date'>order date: </p>
+                    </div>
+                    <button class='remove-btn'>Remove</button>
+                </div>
+            </div>
+
+
+            
+            <!-- add new product -->
+            <div class='add-product-area'>
+                <div class="add-product-form">
+                    <table>
+                        <tr>
+                            <td><label for='name'>Name:</label></td>
+                            <td><input class='add-name' id='name' type='text' /></td>
+                        </tr>
+                        <tr>
+                            <td><label for='image'>Image URL:</label></td>
+                            <td><input class='add-img' id='image' type='text' /></td>
+                        </tr>
+                        <tr>
+                            <td><label for='quantity'>Quantity:</label></td>
+                            <td><input class='add-quantity' id='quantity' type='number' /></td>
+                        </tr>
+                        <tr>
+                            <td><label for='category'>Category:</label></td>
+                            <td><input class='add-category' id='category' type='text' /></td>
+                        </tr>
+                        <tr>
+                            <td><label for='price'>Price:</label></td>
+                            <td><input class='add-price' id='price' type='number' /></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='button-area1'>
+                    <div class='button-area2'>
+                        <button class='cancel-btn'>Cancel</button>
+                        <button class='submit-btn'>Submit</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Edit a home page product-->
+            <div>
+                
+            </div>
+
+
+
+
+
+        </div>
+
+        <script src="jquery.min.js"></script>
+        <script src="seller.js"></script>
+
+    </body>
+</html>
