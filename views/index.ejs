@@ -1,0 +1,45 @@
+<%- include('partials/header.ejs') %>
+
+  <p id="empty"></p>
+
+  <!-- Product from LocalStorage -->
+
+  <div class="row productList" id="productList">
+    <% if ( products.length !=0) { for (let i=0; i < products.length; i++) { %>
+
+      <div class=" card" style="width: 18rem;">
+        <div>
+          <div class="productView">
+            <img id="productId" src="<%=products[i].productImage%>" class="card-img-top" alt="...">
+
+
+
+          </div>
+
+          <div class="productCart row card-body">
+            <h5 class="col-md-6 card-title">
+              <%= products[i].productName %>
+            </h5>
+            <p class="col-md-3 price">$ <span>
+                <%= products[i].productPrice%>
+              </span></p>
+            <i class="addToCart col-md-3 fas fa-cart-plus"
+              style="font-size:40px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i>
+
+
+          </div>
+
+        </div>
+
+      </div>
+      <% } }%>
+
+  </div>
+
+  <!-- Show Product-->
+
+  <div id="ff"></div>
+
+
+
+  <%- include('partials/footer.ejs') %>

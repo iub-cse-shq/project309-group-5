@@ -1,0 +1,97 @@
+body {
+  background-color: #18454A!important;
+}
+
+a {
+  font-size: 20px;
+  font-weight: bold;
+  color: white!important;
+}
+
+.header-area {
+  background-color: #389da9!important;
+}
+
+.price {
+  color: #F57224;
+  font-size: 15px;
+}
+
+.body {
+  padding: 30px !important;
+}
+
+.productList {
+  padding-left: 20px;
+}
+
+.card {
+  margin: 10px;
+}
+
+#clickableAwesomeFont {
+  cursor: pointer
+}
+
+.inputField {
+  margin-bottom: 10px;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+  width: 269px;
+  height: 183px;
+}
+
+.product-img {
+  height: 100%;
+  width: 100%;
+}
+
+.iconShopping {
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  font-size: 1.8rem;
+}
+
+.iconShopping p {
+  color: white;
+  position: absolute;
+  top: -3px;
+  right: -15px;
+  font-size: 13px;
+  background-color: #55c020;
+  padding: 2px 6px;
+  border-radius: 32%;
+}
+
+/*cart box*/
+
+.productBox {
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  transition: 0.3s linear;
+  transform: scale(0);
+}
+
+.productBox.active {
+  transform: scale(1);
+}
+
+.productBox {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgb(0, 0, 0);
+  padding: 10px 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.productBox i:hover {
+  background: #ff0000a5;
+}

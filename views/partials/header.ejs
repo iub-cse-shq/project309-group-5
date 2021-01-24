@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/c9735f6ea9.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    <%=title %>
+  </title>
+</head>
+
+<body>
+
+  <!-- header area -->
+  <div>
+    <nav style="background-color: #389da9!important; margin-bottom: 20px;"
+      class=" navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us.</a>
+            </li>
+            <div class="iconShopping">
+              <p>0</p>
+              <a href="/cart"><i class="cartBtn fa fa-shopping-cart"
+                  style="font-size:40px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i></a>
+            </div>
+          </ul>
+
+
+          <!-- <a class="btn btn-primary" href="addproductPage" role="button"><i class=" fas fa-plus"></i>
+            Add Product</a> -->
+          <a style="margin-right: 10px;" class="btn btn-primary" href="signup" role="button"><i
+              class=" fas fa-plus"></i>
+            SignUp</a>
+          <a class="btn btn-primary" href="login" role="button"><i class=" fas fa-plus"></i>
+            Login</a>
+
+        </div>
+      </div>
+    </nav>
+  </div>

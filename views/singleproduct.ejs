@@ -1,0 +1,41 @@
+<%- include('partials/header.ejs') %>
+
+
+  <% console.log(singleProduct) %>
+    <div class="row">
+      <div class="col-md-6" ">
+      <img  style=" height: 440px; width:100%" src=" <%=singleProduct.productImage %>" class="product-img" alt="...">
+      </div>
+      <div class="col-md-6" style="height: 440px; background-color: rgb(127, 179, 228);">
+        <div class="col">
+          <h1 style="color: rgb(255, 62, 62);">
+            <%=singleProduct.productName %>
+          </h1>
+          <p>
+            <%=singleProduct.productDiscription %>
+          </p>
+          <h5> Price: </h5>
+          <h1 style="color: rgb(0, 150, 0);">
+            <%=singleProduct.productPrice %>
+          </h1>
+          <div class="row">
+            <div class="col-6">
+              <a class="btn btn-primary" href="../" role="button"><i class=" fas fa-shopping-cart"></i>
+                Add to Cart</a>
+
+            </div>
+            <div class="col-6">
+              <a class="btn btn-danger" href="../" role="button"><i class=" fa fa-close"></i>
+                Calcel</a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <%- include('partials/footer.ejs') %>
