@@ -11,7 +11,13 @@ app.use(bodyParser.urlencoded({
 var Products = require('./product.model')
 var Users = require('./user.model')
 
+
+
+
+
 //Database Connection
+
+
 var mongoose = require('mongoose');
 const { static } = require('express');
 mongoose.Promise = global.Promise
@@ -25,7 +31,7 @@ mongoose.connection.on('error', function (err) {
 
 
 
-//server routes go here
+//server routes
 
 app.get('/', function (request, response) {
   Products.find({}, function (err, data) {
@@ -45,28 +51,9 @@ app.get('/seller', function (request, response) {
 })
 
 
-
-app.get('/singleProduct/:id', function (request, response) {
-  console.log(request.params.id)
-
-  Products.findById(request.params.id, function (err, data) {
-    console.log(data)
-    response.render('singleproduct.ejs', {
-      singleProduct: data,
-
-      title: "Single Product"
-    })
-  })
-
-})
-
-
-
 app.get('/cart', function (request, response) {
   response.sendFile(__dirname + '/cart.html')
 })
-
-
 
 
 app.get('/signup', function (request, response) {
@@ -85,9 +72,6 @@ app.get('/seller', function (request, response) {
   response.sendFile(__dirname + '/views/seller.html')
 })
 
-///////////////////////
-
-
 app.post('/login', function (request, response) {
   //console.log(request.body.email)
   Users.find({ email: request.body.email, password: request.body.password, accounttype: request.body.accounttype }, (err, data) => {
@@ -105,7 +89,7 @@ app.post('/login', function (request, response) {
           })
         })
       } else if (data[0].accounttype == "Buyer") {
-        console.log("Buyer")
+        //console.log("Buyer")
 
         Users.findById(data[0].id, function (err, data) {
           response.render('buyer.ejs', {
